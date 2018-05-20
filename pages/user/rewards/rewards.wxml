@@ -1,0 +1,7 @@
+<!--pages/user/rewards/rewards.wxml-->
+<view class="page">
+  <view class="page__hd pd20">
+      <view class="page__title">打赏作者</view>
+      <view class="page__desc">如果你觉得作者的小程序不错，一不小心帮到了你，欢迎打赏作者几包辣条的钱💰<view class="btn_paste" bindtap='previewImage' id="https://wx.hello1010.com/uploadfiles/hellojammy_zs.jpg">慷慨打赏作者</view></view>
+  </view>
+</view>

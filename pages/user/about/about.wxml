@@ -1,0 +1,22 @@
+<!--pages/user/about/about.wxml-->
+<view class="page">
+  <view class="page__hd pd20">
+      <view class="page__title">关于作者</view>
+      <view class="page__desc">毕业于西南交通大学。👨‍💻‍ 程序猿一枚。关注软件架构设计、微信公众号及小程序开发、大数据人工智能等领域。</view>
+      <view class="page__desc" style="margin-top: 10px; ">博客地址：http://www.hello1010.com<view class="btn_paste" data-text = "http://www.hello1010.com" bindtap="pasteText">点击复制</view></view>
+      <view class="page__desc">微信公众平台与小程序交流QQ群：141927779<view class="btn_paste" data-text = "141927779" bindtap="pasteText">点击复制</view></view>
+      <view class="page__desc">作者微信号 #烦请备注：hellojammy<view class="btn_paste" data-text = "hellojammy" bindtap="pasteText">点击复制</view></view>
+      <view class="page__desc" style="margin-top: 10px; font-weight: bold; color:#00a4e3">著有《微信公众平台开发与小程序——从零搭建整套系统》一书，在京东，当当等平台有售。</view>
+  </view>
+  
+  <view class="page__hd pd20">
+      <view class="page__title">关于源码</view>
+      <view class="page__desc">本小程序代码及后端接口代码均开源，需要的请联系我</view>
+  </view>
+
+  <view class="page__hd pd20">
+      <view class="page__title">使用接口</view>
+      <view class="page__desc">本程序使用的第三方接口及开源代码主要有：</view>
+      <view class="page__desc">1、Face++旷视人脸检测接口</view>
+  </view>
+</view>

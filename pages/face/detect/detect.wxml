@@ -1,0 +1,52 @@
+<!--pages/face/detect/detect.wxml-->
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">人脸检测</view>
+        <view class="page__desc">上传一张5M以内大小照片，程序自动检测人脸及相关特征信息</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-cells">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <view class="weui-uploader">
+                        <view class="weui-uploader__hd">
+                            <view class="weui-uploader__title">照片上传</view>
+                            <view class="weui-uploader__info">{{files.length}}</view>
+                        </view>
+                        <view class="weui-uploader__bd">
+                            <view class="weui-uploader__files" id="uploaderFiles">
+                                <block wx:for="{{files}}" wx:key="*this">
+                                    <view class="weui-uploader__file" bindtap="showImage" bindlongpress="previewImage" id="{{item}}">
+                                        <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+                                    </view>
+                                </block>
+                                <view class="weui-uploader__input-box">
+                                    <view class="weui-uploader__input" bindtap="chooseImage"></view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <view wx:if="{{ progress > 0 && progress < 100}}" class="weui-progress">
+                        <view class="weui-progress__bar">
+                            <progress percent="{{progress}}" stroke-width="3" show-info="true" active="true" />
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="page__desc">{{faceBrief}}</view>
+        <view class="weui-panel weui-panel_access">
+          <view class="weui-panel__hd">人脸识别结果：{{faceCnt}}</view>
+          <view wx:if="{{faceCover.length > 0}}" class="weui-panel__bd">
+              <view class="weui-media-box weui-media-box_text">
+                  <view class="weui-media-box__title weui-media-box__title_in-text">{{singleFaceIdx}}</view>
+                  <rich-text nodes="{{singleFaceDes}}"></rich-text>
+              </view>
+          </view>
+        </view>        
+    </view>
+    <view class="image_container">
+      <image wx:if="{{pImage}}" style="width:{{imageSize.width}}px" mode="widthFix" src="{{pImage}}" binderror="imageError" bindload="imageLoad"></image>
+      <view wx:for="{{faceCover}}" wx:for-index="idx" wx:for-item="face" wx:key="*this" data-idx="{{idx}}" bindtap="showFaceDes" class="face_cover {{face.current ? 'current' : ''}}" style="{{face.style}}"></view>
+    </view>
+</view>
