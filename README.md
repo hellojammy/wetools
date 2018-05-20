@@ -35,8 +35,19 @@ mta.App.init({
 
 1、登录部分
 
-<img src="https://github.com/hellojammy/wetools/blob/master/res/run/831526830361_.pic_hd.jpg" width="400"/>
-<img src="https://github.com/hellojammy/wetools/blob/master/res/run/841526830361_.pic_hd.jpg" width="400"/> 
-<img src="https://github.com/hellojammy/wetools/blob/master/res/run/851526830362_.pic_hd.jpg" width="400"/> 
+<img src="https://github.com/hellojammy/wetools/blob/master/res/run/831526830361_.pic_hd.jpg" height="450"/>
+<img src="https://github.com/hellojammy/wetools/blob/master/res/run/841526830361_.pic_hd.jpg" height="450"/> 
+<img src="https://github.com/hellojammy/wetools/blob/master/res/run/851526830362_.pic_hd.jpg" height="450"/>
+<img src="https://github.com/hellojammy/wetools/blob/master/res/run/861526830362_.pic_hd.jpg" height="450"/> 
+<img src="https://github.com/hellojammy/wetools/blob/master/res/run/921526830751_.pic_hd.jpg" height="450"/> 
+
+2、人脸检测
+
+<img src="https://github.com/hellojammy/wetools/blob/master/res/run/881526830363_.pic_hd.jpg" height="450"/> 
+<img src="https://github.com/hellojammy/wetools/blob/master/res/run/891526830363_.pic_hd.jpg" height="450"/> 
+<img src="https://github.com/hellojammy/wetools/blob/master/res/run/901526830364_.pic_hd.jpg" height="450"/> 
+<img src="https://github.com/hellojammy/wetools/blob/master/res/run/911526830365_.pic_hd.jpg" height="450"/> 
+
+
 
 
