@@ -1,6 +1,9 @@
 ## wetools
 
-微信小程序工具类集合，不断更新中。
+微信小程序工具类集合，不断更新中。扫码直接体验。
+
+<img src="https://github.com/hellojammy/wetools/blob/master/res/run/wetools_qr.jpg" height="260"/>
+
 
 
 ## 如何使用本源码
@@ -32,6 +35,12 @@ mta.App.init({
           "statReachBottom": true
         });
 ```
+
+## 第三方接口
+
+本源码使用的第三方接口主要如下：
+
+1、[Face++人脸检测](https://www.faceplusplus.com.cn/face-detection/)接口，并使用了部分付费功能
 
 ## 部分效果截图
 
